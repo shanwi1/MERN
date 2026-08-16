@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .navbar{
+            background-color: papayawhip;
+            height: 40px;
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            border-radius: 40px;
+        }
+        .container{
+            display:flex;
+            justify-content: space-evenly;
+            width: 500px;
+        }
+        li{
+            list-style: none;
+        }
+        
+        li:hover{
+            color: cadetblue;
+            text-decoration: unerline;
+        }
+        @media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+        
+    </style>
 </head>
 <body>
-    
+    <div class="navbar">
+        <h2>Mysite</h2>
+        <ul class="container">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+        </div>
 </body>
 </html>
